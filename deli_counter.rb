@@ -1,5 +1,4 @@
-# Write your code here.
-katz_deli = [ ]
+katz_deli= [ ]
 
 def line(katz_deli)
   if katz_deli.length>0
@@ -13,12 +12,16 @@ def line(katz_deli)
   end
 end
 
-katz_deli = ["John", "Jeremy"]
-line(katz_deli)
-
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end
+
+$counter=0 
+def take_a_number(katz_deli)
+  $counter+= 1 
+  puts "Welcome, you have ticket number #{$counter}."
+  katz_deli.push(#{$counter})
 end
 
 def now_serving(katz_deli)
@@ -29,3 +32,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   end
 end
+
+
+
+
